@@ -41,6 +41,11 @@ namespace Solution.Data.Infrastructure
             return DbSet.Where(Condition).FirstOrDefault();
         }
 
+        public IEnumerable<T> GetAll()
+        {
+            return DbSet.ToList();
+        }
+
         public T GetById(string id)
         {
             return DbSet.Find(id);
@@ -69,5 +74,7 @@ namespace Solution.Data.Infrastructure
                 
 
         }
+       
+
     }
 }

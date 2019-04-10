@@ -9,7 +9,7 @@ namespace Solution.Data.Infrastructure
    public interface IUnitOfWork:IDisposable
     {
         void commit();
-        IRepositoryBase<T> GetRepositoryBase<T>() where T:class;
+        RepositoryBase<T> GetRepositoryBase<T>() where T:class;
         
 
 

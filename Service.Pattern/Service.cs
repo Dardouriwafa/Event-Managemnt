@@ -65,5 +65,19 @@ namespace Service.Pattern
         {
             utk.GetRepositoryBase<T>().Update(entity);
         }
+
+        public virtual IEnumerable<T> GetAll()
+
+        {
+
+            return utk.GetRepositoryBase<T>().GetAll();
+
+            //return _repository.GetById(id);
+
+            //  return utwk.getRepository<TEntity>().GetById(id);
+
+        }
+
+       
     }
 }

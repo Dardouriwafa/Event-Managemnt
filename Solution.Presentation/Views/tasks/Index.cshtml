@@ -1,51 +1,78 @@
 ﻿@model IEnumerable<Solution.Presentation.Models.TaskVM>
 
+
+
+
+
 @{
     ViewBag.Title = "Index";
 }
+<div class="boxes" style="margin-left:20px;">
+    <div class="content">
+        <h2>Tasks</h2>
 
-<h2>Index</h2>
+        <p>
+            @Html.ActionLink("Export Excel", "ExportToExcel")
+            <br/>
+            @Html.ActionLink("Create New", "Create")
+        </p>
+        @using (Html.BeginForm())
+        {
+            <table>
+                <tr>
+                    <td>
+                        <div>
+                            Search by Name: @Html.TextBox("searchString")
+                        </div>
+                    </td>
+                    <td>
+                        <input type="submit" value="Search" id="submit" />
+                    </td>
+                </tr>
+            </table>
+        }
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.description)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.nom)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.deadline)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.idOrganizer)
+                </th>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.description)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.nom)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.deadline)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.idOrganizer)
-        </th>
-        <th></th>
-    </tr>
+                <th></th>
+            </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.description)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.nom)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.deadline)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.idOrganizer)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.id })
-        </td>
-    </tr>
-}
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @item.description
+                    </td>
+                    <td>
+                        @item.nom
+                    </td>
+                    <td>
+                        @item.deadline
+                    </td>
+                    <td>
+                        @item.idOrganizer
+                    </td>
 
-</table>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.id }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.id }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.id })
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>
+</div>

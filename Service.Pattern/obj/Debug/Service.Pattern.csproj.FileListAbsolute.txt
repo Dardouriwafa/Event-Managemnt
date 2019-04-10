@@ -25,3 +25,21 @@ C:\Users\Docteury\Documents\Visual Studio 2015\Projects\Events\Service.Pattern\b
 C:\Users\Docteury\Documents\Visual Studio 2015\Projects\Events\Service.Pattern\obj\Debug\Service.Pattern.csprojResolveAssemblyReference.cache
 C:\Users\Docteury\Documents\Visual Studio 2015\Projects\Events\Service.Pattern\obj\Debug\Service.Pattern.dll
 C:\Users\Docteury\Documents\Visual Studio 2015\Projects\Events\Service.Pattern\obj\Debug\Service.Pattern.pdb
+C:\Users\wfee\Desktop\Events\Service.Pattern\bin\Debug\Service.Pattern.dll.config
+C:\Users\wfee\Desktop\Events\Service.Pattern\bin\Debug\Service.Pattern.dll
+C:\Users\wfee\Desktop\Events\Service.Pattern\bin\Debug\Service.Pattern.pdb
+C:\Users\wfee\Desktop\Events\Service.Pattern\bin\Debug\EntityFramework.dll
+C:\Users\wfee\Desktop\Events\Service.Pattern\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\wfee\Desktop\Events\Service.Pattern\bin\Debug\Solution.Data.dll
+C:\Users\wfee\Desktop\Events\Service.Pattern\bin\Debug\Solution.Domain.dll
+C:\Users\wfee\Desktop\Events\Service.Pattern\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\wfee\Desktop\Events\Service.Pattern\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\wfee\Desktop\Events\Service.Pattern\bin\Debug\Solution.Data.pdb
+C:\Users\wfee\Desktop\Events\Service.Pattern\bin\Debug\EntityFramework.xml
+C:\Users\wfee\Desktop\Events\Service.Pattern\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\wfee\Desktop\Events\Service.Pattern\bin\Debug\Solution.Domain.pdb
+C:\Users\wfee\Desktop\Events\Service.Pattern\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\wfee\Desktop\Events\Service.Pattern\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\wfee\Desktop\Events\Service.Pattern\obj\Debug\Service.Pattern.csprojResolveAssemblyReference.cache
+C:\Users\wfee\Desktop\Events\Service.Pattern\obj\Debug\Service.Pattern.dll
+C:\Users\wfee\Desktop\Events\Service.Pattern\obj\Debug\Service.Pattern.pdb

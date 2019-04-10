@@ -18,7 +18,7 @@ namespace Solution.Data.Infrastructure
         void Update(T entity);
         void Delete(T entity);
         void Delete(Expression<Func<T, bool>> Condition);
-        
+        IEnumerable<T> GetAll();
 
     }
 }

@@ -31,3 +31,23 @@ C:\Users\Docteury\Documents\Visual Studio 2015\Projects\Events\Solution.Service\
 C:\Users\Docteury\Documents\Visual Studio 2015\Projects\Events\Solution.Service\obj\Debug\Solution.Service.csprojResolveAssemblyReference.cache
 C:\Users\Docteury\Documents\Visual Studio 2015\Projects\Events\Solution.Service\obj\Debug\Solution.Service.dll
 C:\Users\Docteury\Documents\Visual Studio 2015\Projects\Events\Solution.Service\obj\Debug\Solution.Service.pdb
+C:\Users\wfee\Desktop\Events\Solution.Service\bin\Debug\Solution.Service.dll.config
+C:\Users\wfee\Desktop\Events\Solution.Service\bin\Debug\Solution.Service.dll
+C:\Users\wfee\Desktop\Events\Solution.Service\bin\Debug\Solution.Service.pdb
+C:\Users\wfee\Desktop\Events\Solution.Service\bin\Debug\EntityFramework.dll
+C:\Users\wfee\Desktop\Events\Solution.Service\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\wfee\Desktop\Events\Solution.Service\bin\Debug\Service.Pattern.dll
+C:\Users\wfee\Desktop\Events\Solution.Service\bin\Debug\Solution.Data.dll
+C:\Users\wfee\Desktop\Events\Solution.Service\bin\Debug\Solution.Domain.dll
+C:\Users\wfee\Desktop\Events\Solution.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\wfee\Desktop\Events\Solution.Service\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\wfee\Desktop\Events\Solution.Service\bin\Debug\Service.Pattern.pdb
+C:\Users\wfee\Desktop\Events\Solution.Service\bin\Debug\Solution.Data.pdb
+C:\Users\wfee\Desktop\Events\Solution.Service\bin\Debug\Solution.Domain.pdb
+C:\Users\wfee\Desktop\Events\Solution.Service\bin\Debug\EntityFramework.xml
+C:\Users\wfee\Desktop\Events\Solution.Service\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\wfee\Desktop\Events\Solution.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\wfee\Desktop\Events\Solution.Service\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\wfee\Desktop\Events\Solution.Service\obj\Debug\Solution.Service.csprojResolveAssemblyReference.cache
+C:\Users\wfee\Desktop\Events\Solution.Service\obj\Debug\Solution.Service.dll
+C:\Users\wfee\Desktop\Events\Solution.Service\obj\Debug\Solution.Service.pdb

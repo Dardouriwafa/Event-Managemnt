@@ -11,12 +11,35 @@ namespace Solution.Service
 {
     public class ServiceTask : Service<tasks>, IServiceTask
     {
-        static DataBaseFactory dbf = new DataBaseFactory();
-        static UnitOfWork uow = new UnitOfWork(dbf);
+        static IDataBaseFactory dbf = new DataBaseFactory();
+        static IUnitOfWork uow = new UnitOfWork(dbf);
         public ServiceTask() : base(uow)
         {
         }
 
-       
+        public int count()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int count(int id)
+
+        {
+
+            int simple = GetAll().Count();
+
+            return simple;
+
+        }
+        public  IEnumerable<tasks> SearchTaskByName(string searchString)
+        {
+            IEnumerable<tasks> task = GetMany();
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                task = GetMany(x => x.nom.Contains(searchString));
+            }
+            return task;
+        }
+
     }
 }

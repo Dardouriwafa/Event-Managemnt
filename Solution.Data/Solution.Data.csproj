@@ -58,9 +58,9 @@
     <Compile Include="Infrastrures\IUnitOfWork.cs" />
     <Compile Include="Infrastrures\RepositoryBase.cs" />
     <Compile Include="Infrastrures\UnitOfWork.cs" />
-    <Compile Include="Migrations\201904022152483_mig1.cs" />
-    <Compile Include="Migrations\201904022152483_mig1.Designer.cs">
-      <DependentUpon>201904022152483_mig1.cs</DependentUpon>
+    <Compile Include="Migrations\201904091742451_b1.cs" />
+    <Compile Include="Migrations\201904091742451_b1.Designer.cs">
+      <DependentUpon>201904091742451_b1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MyContext.cs" />
@@ -80,8 +80,8 @@
     <Folder Include="CustomConventions\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201904022152483_mig1.resx">
-      <DependentUpon>201904022152483_mig1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201904091742451_b1.resx">
+      <DependentUpon>201904091742451_b1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

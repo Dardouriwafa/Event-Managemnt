@@ -10,5 +10,7 @@ namespace Solution.Service
 {
     interface IServiceTask : IService<tasks>
     {
+        int count();
+        IEnumerable<tasks> SearchTaskByName(string searchString);
     }
 }

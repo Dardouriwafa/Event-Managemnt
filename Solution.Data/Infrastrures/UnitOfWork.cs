@@ -23,9 +23,13 @@ namespace Solution.Data.Infrastructure
             DBFactory.Dispose();
         }
 
-        public IRepositoryBase<T> GetRepositoryBase<T>() where T : class
+
+       
+
+        public RepositoryBase<T> GetRepositoryBase<T>() where T : class
         {
-            return new RepositoryBase<T>(DBFactory);
+            RepositoryBase<T> repo = new RepositoryBase<T>(DBFactory);
+            return repo;
         }
     }
 }

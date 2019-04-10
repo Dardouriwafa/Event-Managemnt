@@ -21,3 +21,17 @@ C:\Users\Docteury\Documents\Visual Studio 2015\Projects\Events\Solution.Domain\b
 C:\Users\Docteury\Documents\Visual Studio 2015\Projects\Events\Solution.Domain\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 C:\Users\Docteury\Documents\Visual Studio 2015\Projects\Events\Solution.Domain\obj\Debug\Solution.Domain.dll
 C:\Users\Docteury\Documents\Visual Studio 2015\Projects\Events\Solution.Domain\obj\Debug\Solution.Domain.pdb
+C:\Users\wfee\Desktop\Events\Solution.Domain\bin\Debug\Solution.Domain.dll.config
+C:\Users\wfee\Desktop\Events\Solution.Domain\bin\Debug\Solution.Domain.dll
+C:\Users\wfee\Desktop\Events\Solution.Domain\bin\Debug\Solution.Domain.pdb
+C:\Users\wfee\Desktop\Events\Solution.Domain\bin\Debug\EntityFramework.dll
+C:\Users\wfee\Desktop\Events\Solution.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\wfee\Desktop\Events\Solution.Domain\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\wfee\Desktop\Events\Solution.Domain\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\wfee\Desktop\Events\Solution.Domain\bin\Debug\EntityFramework.xml
+C:\Users\wfee\Desktop\Events\Solution.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\wfee\Desktop\Events\Solution.Domain\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\wfee\Desktop\Events\Solution.Domain\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\wfee\Desktop\Events\Solution.Domain\obj\Debug\Solution.Domain.csprojResolveAssemblyReference.cache
+C:\Users\wfee\Desktop\Events\Solution.Domain\obj\Debug\Solution.Domain.dll
+C:\Users\wfee\Desktop\Events\Solution.Domain\obj\Debug\Solution.Domain.pdb

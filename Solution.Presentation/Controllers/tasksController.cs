@@ -3,10 +3,14 @@ using Solution.Presentation.Models;
 using Solution.Service;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net;
+using System.Net.Mail;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.UI;
+using System.Web.UI.WebControls;
 
 namespace Solution.Presentation.Controllers
 {
@@ -15,19 +19,39 @@ namespace Solution.Presentation.Controllers
         ServiceTask tt = new ServiceTask();
         IServiceOrganizer so = new ServiceOrganizer();
         // GET: tasks
-        public ActionResult Index()
+        public ActionResult Index(string searchString)
         {
             List<TaskVM> ts = new List<TaskVM>();
-            foreach(tasks t in tt.GetMany())
+            if(searchString =="")
             {
-                ts.Add(new TaskVM() {
-                    deadline=t.deadline,
-                    description=t.description,
-                    id=t.id,
-                    idOrganizer=t.idOrganizer,
-                    nom=t.nom
-                });
+                foreach (tasks t in tt.GetMany())
+                {
+                    ts.Add(new TaskVM()
+                    {
+                        deadline = t.deadline,
+                        description = t.description,
+                        id = t.id,
+                        idOrganizer = t.idOrganizer,
+                        nom = t.nom
+                    });
+                }
             }
+            else {
+                foreach (tasks t in tt.SearchTaskByName(searchString))
+                {
+                    ts.Add(new TaskVM()
+                    {
+                        deadline = t.deadline,
+                        description = t.description,
+                        id = t.id,
+                        idOrganizer = t.idOrganizer,
+                        nom = t.nom
+
+                    });
+                }
+            }
+           
+           
             return View(ts);
         }
 
@@ -53,6 +77,7 @@ namespace Solution.Presentation.Controllers
         // GET: tasks/Create
         public ActionResult Create()
         {
+           
             var organizers = so.GetMany();
             ViewBag.ListOrg = new SelectList(organizers, "Id", "prenom");
             return View();
@@ -75,6 +100,37 @@ namespace Solution.Presentation.Controllers
             };
             tt.Add(f);
             tt.Commit();
+            try
+
+            {
+
+                MailMessage mail = new MailMessage("wafa.dardouri@esprit.tn", "wafa.dardouri@esprit.tn", "affectation de tache", "votre tache est affecter  ");
+
+                mail.IsBodyHtml = true;
+
+                SmtpClient smtpClient = new SmtpClient("Smtp.gmail.com", 587);
+
+                smtpClient.EnableSsl = true;
+
+
+
+
+                smtpClient.Credentials = new System.Net.NetworkCredential("wafa.dardouri@esprit.tn", "09829531");
+
+                smtpClient.Send(mail);
+
+
+
+
+            }
+
+            catch (Exception ex)
+
+            {
+
+                Console.WriteLine(ex.StackTrace);
+
+            }
 
             return RedirectToAction("Index");
         }
@@ -132,6 +188,67 @@ namespace Solution.Presentation.Controllers
             tt.Delete(task);
             tt.Commit();
             return RedirectToAction("Index");
+        }
+
+        public ActionResult ExportToExcel()
+
+        {
+
+            ServiceTask rp = new ServiceTask();
+
+
+
+
+            var gv = new GridView();
+
+            var liste = rp.GetMany();
+
+            gv.DataSource = liste.ToList();
+
+            gv.DataBind();
+
+
+
+
+            Response.ClearContent();
+
+            Response.Buffer = true;
+
+            Response.AddHeader("content-disposition", "attachment; filename=MyExcelFile.xls");
+
+            Response.ContentType = "application/ms-excel";
+
+
+
+
+            Response.Charset = "";
+
+            StringWriter sw = new StringWriter();
+
+            HtmlTextWriter htw = new HtmlTextWriter(sw);
+
+
+
+
+            gv.RenderControl(htw);
+
+
+
+
+            Response.Output.Write(sw.ToString());
+
+            Response.Flush();
+
+            Response.End();
+
+
+
+
+            return View("Index");
+
+
+
+
         }
     }
 }

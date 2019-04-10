@@ -20,5 +20,7 @@ namespace Service.Pattern
         void Delete(Expression<Func<T, bool>> Condition);
         void Commit();
         void Dispose();
+        IEnumerable<T> GetAll();
+        
     }
 }
